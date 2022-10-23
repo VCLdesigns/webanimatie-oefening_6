@@ -22,11 +22,21 @@
             <div>&#36;</div>
             <div>&#9825;</div>
             <div>☺</div>
-            <div id="spinner">V</div>
+            <div id="spinner">&#10148;
+            </div>
         </div>
         <div id="knop">Go!</div>
-        
+
     </div>
+    <script>
+        var de_knop = document.querySelector("#knop");
+        var de_spinner = document.querySelector("#spinner");
+        de_knop.addEventListener("click", draaien);
+        function draaien(evt){
+    var willekeurig = 0 + Math.random() * (360 - 0);
+            spinner.style.transform = "rotate(" + willekeurig + "deg)";
+        }
+    </script>
 </body>
 
 </html>
