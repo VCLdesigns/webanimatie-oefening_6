@@ -51,18 +51,27 @@ font-size: 8em;
    background-color: #3C3176;
    width: 600px;
    margin: 0 auto;
-   
+   cursor: pointer;
 }
 #bord #spinner{
     position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 50px);
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #AA8039;
-    font-weight: 900;
-    font-size: 3em;
-    text-align: center;
-    transition: rotate 10s linear;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+  border: solid var(--zwart);
+  border-width: 0 10px 10px 0;  
+}
+
+#bord #spinner::before{
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 8px;
+  width: 75px;
+    height: 75px;
+  border-bottom: solid var(--zwart) 10px;
+  transform: rotate(45deg);
+
+  
 }
